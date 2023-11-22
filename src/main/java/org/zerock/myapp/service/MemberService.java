@@ -73,5 +73,7 @@ public interface MemberService {
     // 특정 회원 상세 문의내용 조회
     public abstract InquiriesVO findInquiry(@Param("id") Long id);
 
+    // 문의글 작성
+    public abstract Integer writeInquiry(@Param("title")String title, @Param("content")String content, @Param("memberId")Long memberId);
 
 } // end interface

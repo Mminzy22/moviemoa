@@ -256,4 +256,10 @@
     i.id = #{id}
     </select>
 
+    <!-- 문의글 작성 -->
+    <insert id="writeInquiry">
+        INSERT INTO INQUIRIES (title, content, member_id)
+        VALUES (#{title}, #{content},#{memberId})
+    </insert>
+
 </mapper>
