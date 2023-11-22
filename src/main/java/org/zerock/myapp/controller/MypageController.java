@@ -338,6 +338,31 @@ public class MypageController {
 
     } // detailInquiryView
 
+
+    @GetMapping("/writeInquiry")
+    public String writeInquiryView(Model model) {
+        log.trace("writeInquiryView() invoked.");
+
+        return "/mypage/writeInquiry";
+    } // writeInquiryView
+
+    @PostMapping ("/writeInquiry")
+    public String writeInquiry(String title, String content, Long kategorieId, Long movieId) {
+        log.trace("writeInquiry({}, {}, {}, {}) invoked.", title, content, kategorieId, movieId);
+
+        // 현재 인증된 사용자의 정보를 가져옵니다.
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        // 인증된 사용자의 이름(여기서는 사용자 ID로 사용)을 가져옵니다.
+        String username = authentication.getName();
+        // 사용자 이름(아이디)를 Long 타입으로 변환합니다.
+        Long memberId = Long.valueOf(username);
+
+        Integer posted = this.memberService.writeInquiry(title, content, memberId);
+
+        return "redirect:/mypage/inquiryList/1";
+    } // writeInquiry
+
+
 //    @PostMapping("/ask")
 //    public String mypageAsk() {
 //        log.trace("mypageAsk() invoked.");

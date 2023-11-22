@@ -76,6 +76,11 @@ public interface MemberMapper {
     // 특정 회원 문의내역 수
     public abstract Integer totalMyInquiriesCount(@Param("memberId") Long memberId);
 
+    // 특정 회원 문의 내역 조회
     public abstract InquiriesVO findInquiry(@Param("id") Long id);
+
+    // 문의글 작성
+    public abstract Integer writeInquiry(@Param("title")String title, @Param("content")String content, @Param("memberId")Long memberId);
+
 
 }// end interface

@@ -218,5 +218,10 @@ public class MemberServiceImpl implements MemberService {
         return this.memberMapper.findInquiry(id);
     }
 
+    @Override
+    public Integer writeInquiry(String title, String content, Long memberId) {
+        return this.memberMapper.writeInquiry(title, content, memberId);
+    }
+
 
 } // end class

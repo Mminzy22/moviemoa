@@ -86,6 +86,7 @@
 <body>
 <header th:replace="nav.html" />
 <main>
+    <aside th:replace="mypageSide.html"></aside>
     <input type="hidden" name="id" th:value="${id}">
     <div class="board-details">
         <div class="board-header">
@@ -98,7 +99,7 @@
             <div class="board-content" th:text="${inquiry.content}">문의 내용</div>
         </div>
         <div class="board-content-border">
-            <div class="board-title" th:text="${inquiry.title}">답변</div>
+            <div class="board-title">답변</div>
             <div class="board-content" th:text="${inquiry.responsesContent}">문의 답변 입니다.</div>
         </div>
     </div>
