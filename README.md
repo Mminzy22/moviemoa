@@ -69,32 +69,6 @@ MovieMoa는 **영화 정보를 확인하고**, 사용자가 영화에 대한 **�
 
 ---
 
-## ⚙️ 실행 방법
-
-### 1. 환경 설정
-1. **Java 17** 및 **Oracle DB**가 설치되어 있어야 합니다.
-2. 프로젝트에 필요한 라이브러리는 `pom.xml`에 정의되어 있으며, Maven을 통해 자동으로 다운로드됩니다.
-
-### 2. 데이터베이스 설정
-1. `application.yml` 파일에서 데이터베이스 연결 설정을 수정합니다:
-   ```yaml
-   spring:
-     datasource:
-       url: jdbc:oracle:thin:@localhost:1521:xe
-       username: your_username
-       password: your_password
-   ```
-
-### 3. 프로젝트 실행
-1. 프로젝트 루트 디렉토리에서 다음 명령어 실행:
-   ```bash
-   mvn spring-boot:run
-   ```
-
-2. 브라우저에서 `http://localhost:8080`으로 접속합니다.
-
----
-
 ## 🏆 프로젝트 성과 및 배운 점
 
 - **Spring Boot**를 활용한 백엔드 개발 경험.
