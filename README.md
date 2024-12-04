@@ -143,6 +143,9 @@ dependencies {
 > ### 게시글 목록 페이지
 <img src="images/게시글보기.png" alt="게시글 목록 페이지" width="500">
 
+> ### 영화 목록 페이지
+<img src="images/영화목록페이지.png" alt="영화 목록 페이지" width="500">
+
 ---
 
 
