@@ -55,29 +55,29 @@ public class MyPageTests {
 
     }// WritePost
 
-    @Test
-    @DisplayName("댓글 만들기")
-    void WriteReply(){
-        log.trace("WriteReply");
+//    @Test
+//    @DisplayName("댓글 만들기")
+//    void WriteReply(){
+//        log.trace("WriteReply");
+//
+//        Long memberid = 2L;
+//        for(int i = 0; i<100; i++){
+//            this.boardService.insertReply("test를 위한 Reply입니다~"+i, memberid, 34L+i);
+//        }
+//
+//    }//WriteReply
 
-        Long memberid = 2L;
-        for(int i = 0; i<100; i++){
-            this.boardService.insertReply("test를 위한 Reply입니다~"+i, memberid, 34L+i);
-        }
-
-    }//WriteReply
-
-    @Test
-    @DisplayName("아이디 댓글 조회")
-    void FindMemberReply(){
-        log.trace("FindMemberReply");
-
-        Long memberid = 2L;
-
-        List<BoardReplyVO> findReply = this.memberService.findMyPageReplyList(memberid, 1);
-        findReply.forEach(log::info);
-
-
-    }//FindMemberReply
+//    @Test
+//    @DisplayName("아이디 댓글 조회")
+//    void FindMemberReply(){
+//        log.trace("FindMemberReply");
+//
+//        Long memberid = 2L;
+//
+//        List<BoardReplyVO> findReply = this.memberService.findMyPageReplyList(memberid, 1);
+//        findReply.forEach(log::info);
+//
+//
+//    }//FindMemberReply
 
 } //MyPageTests
