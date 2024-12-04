@@ -134,26 +134,14 @@ dependencies {
 > ### 메인 페이지
 <img src="images/메인페이지.png" alt="메인 페이지" width="500">
 
-### 로그인 페이지
+> ### 로그인 페이지
 <img src="images/로그인.png" alt="로그인 페이지" width="500">
 
-### 회원가입 페이지
+> ### 회원가입 페이지
 <img src="images/회원가입.png" alt="회원가입 페이지" width="500">
 
-### 메인 페이지
-![메인 페이지](images/메인페이지.png)
-
-### 로그인 페이지
-![로그인 페이지](images/로그인.png)
-
-### 회원가입 페이지
-![회원가입 페이지](images/회원가입.png)
-
-### 게시판
-![게시판](images/게시판_전체글목록.png)
-
-### 게시글 보기
-![게시글 보기](images/게시글보기.png)
+> ### 게시글 목록 페이지
+<img src="images/게시글보기.png" alt="게시글 목록 페이지" width="500">
 
 ---
 
