@@ -7,7 +7,7 @@ MovieMoa는 사용자가 **영화 정보를 확인**하고, 영화에 대한 **�
 
 ## 📅 프로젝트 개요
 
-- **개발 기간**: 2023.10 ~ 2023.11 
+- **개발 기간**: 2023.10 ~ 2023.11  
 - **팀원 구성**: 5명
 
 ---
@@ -36,7 +36,8 @@ MovieMoa는 사용자가 **영화 정보를 확인**하고, 영화에 대한 **�
   - H2 Database (기본)
   - Oracle DB (ojdbc 8 지원)
   - MyBatis
-  - Spring Security
+  - Lombok
+  - **Spring Security**
   - Gradle
 - **Frontend**:
   - Thymeleaf
@@ -44,6 +45,8 @@ MovieMoa는 사용자가 **영화 정보를 확인**하고, 영화에 대한 **�
   - JavaScript / JQuery / Ajax
 - **Testing**:
   - JUnit 5
+- **로깅**:
+  - log4jdbc-log4j2
 
 ---
 
@@ -131,6 +134,7 @@ dependencies {
 > 
 
 ---
+
 
 ## 🏆 프로젝트 성과 및 배운 점
 
